@@ -38,8 +38,8 @@ module Relation = struct
   }
   (** Contains a reference to some element by its ID and a the "role" of that
       member of the relation: see
-      {{:https://wiki.openstreetmap.org/wiki/Relation} the relevant OSM wiki page} for
-      more*)
+      {{:https://wiki.openstreetmap.org/wiki/Relation} the relevant OSM wiki
+       page} for more.*)
 
   type t = {
     id : Id.relation Id.t;
