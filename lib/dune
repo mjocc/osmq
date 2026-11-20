@@ -1,0 +1,4 @@
+(library
+ (name osmq)
+ (public_name osmq)
+ (libraries xmlm ptime))

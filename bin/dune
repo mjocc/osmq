@@ -1,0 +1,4 @@
+(executable
+ (public_name osmq)
+ (name main)
+ (libraries osmq))

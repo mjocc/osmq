@@ -34,3 +34,7 @@ setup.log
 
 # Local OPAM switch
 _opam/
+
+# specific testing data here
+falklands.osm
+bluebell.osm
