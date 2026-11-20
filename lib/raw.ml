@@ -1,7 +1,7 @@
 (** Specifies the types that are returned by a parser, either XML or PBF (the
-    latter not yet implemented). Has no corresponding .mli since should be
-    types-only. Some OSM export formats do not include any metadata unless
-    explicitly asked to (e.g. Overpass), including timestamps, so the
+    latter not yet implemented). Largely just contains types, so has no
+    corresponding .mli. Some OSM export formats do not include any metadata
+    unless explicitly asked to (e.g. Overpass), including timestamps, so the
     [timestamp] field is optional in all three main record types.*)
 
 module Node = struct
@@ -36,6 +36,10 @@ module Relation = struct
             present in the export format but represented by empty string), so
             this makes it easier to handle.*)
   }
+  (** Contains a reference to some element by its ID and a the "role" of that
+      member of the relation: see
+      {{:https://wiki.openstreetmap.org/wiki/Relation} the relevant OSM wiki page} for
+      more*)
 
   type t = {
     id : Id.relation Id.t;
@@ -45,3 +49,4 @@ module Relation = struct
   }
 end
 
+type element = Node of Node.t | Way of Way.t | Relation of Relation.t
