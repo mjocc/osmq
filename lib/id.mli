@@ -1,6 +1,6 @@
 type +'k t
-(** +k' specifies that t is covariant in 'k, allowing us to say e.g. a "node" id
-    can be used wherever a "node-or-way" id can be used *)
+(** [+k'] specifies that [t] is {i covariant} in ['k], allowing us to say e.g. a
+    "node" id can be used wherever a "node-or-way" id can be used *)
 
 type node = [ `Node ]
 type way = [ `Way ]

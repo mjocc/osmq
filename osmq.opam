@@ -7,7 +7,7 @@ maintainer: ["Matt Occleshaw"]
 authors: ["Matt Occleshaw"]
 license: "MIT"
 homepage: "https://github.com/mjocc/osmq"
-doc: "https://url/to/documentation"
+doc: "https://mjocc.org/osmq"
 bug-reports: "https://github.com/mjocc/osmq/issues"
 depends: [
   "dune" {>= "3.24"}
