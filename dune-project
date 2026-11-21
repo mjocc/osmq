@@ -9,6 +9,8 @@
 
 (authors "Matt Occleshaw")
 
+(maintainers "Matt Occleshaw")
+
 (license MIT)
 
 (documentation https://url/to/documentation)
