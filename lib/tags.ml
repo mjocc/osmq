@@ -7,7 +7,7 @@ type t = string String_map.t
     strings and then share them so don't have to allocate loads in memory maybe.*)
 
 exception
-  Duplicate_tag_key of { key : string; old_value : string; new_value : string }
+  Duplicate_key of { key : string; old_value : string; new_value : string }
 
 let empty = String_map.empty
 
@@ -16,7 +16,7 @@ let of_list xs =
     (fun acc (k, v) ->
       match String_map.find_opt k acc with
       | Some old_value ->
-          raise (Duplicate_tag_key { key = k; new_value = v; old_value })
+          raise (Duplicate_key { key = k; new_value = v; old_value })
       | None -> String_map.add k v acc)
     empty xs
 
