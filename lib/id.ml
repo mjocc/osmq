@@ -1,7 +1,7 @@
-type 'u t = int
-type node
-type way
-type relation
+type 'k t = int
+type node = [ `Node ]
+type way = [ `Way ]
+type relation = [ `Relation ]
 
 let node x = x
 let way x = x

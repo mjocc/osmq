@@ -1,12 +1,15 @@
-type 'u t
-type node
-type way
-type relation
+type +'k t
+(** +k' specifies that t is covariant in 'k, allowing us to say e.g. a "node" id
+    can be used wherever a "node-or-way" id can be used *)
+
+type node = [ `Node ]
+type way = [ `Way ]
+type relation = [ `Relation ]
 
 val node : int -> node t
 val way : int -> way t
 val relation : int -> relation t
-val equal : 'u t -> 'u t -> bool
-val compare : 'u t -> 'u t -> int
-val hash : 'u t -> int
-val pp : Format.formatter -> 'u t -> unit
+val equal : 'k t -> 'k t -> bool
+val compare : 'k t -> 'k t -> int
+val hash : 'k t -> int
+val pp : Format.formatter -> 'k t -> unit
