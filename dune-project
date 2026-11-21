@@ -5,22 +5,19 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github mjocc/osmq))
 
-(authors "Author Name <author@example.com>")
+(authors "Matt Occleshaw")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
-
-(license LICENSE)
+(license MIT)
 
 (documentation https://url/to/documentation)
 
 (package
  (name osmq)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml xmlm)
- (tags
-  ("add topics" "to describe" your project)))
+ (synopsis "An eDSL for OpenStreetMap in OCaml.")
+ (description "An eDSL for OpenStreetMap in OCaml, completed for my Part II project.")
+ (depends ocaml xmlm ptime)
+ )
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
