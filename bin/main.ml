@@ -2,7 +2,7 @@ let () =
   let els =
     Osmq.Xml_parser.fold
       (fun acc x -> x :: acc)
-      [] (Osmq.Xml_parser.File "falklands.osm")
+      [] (Osmq.Xml_parser.File "cambs.osm")
   in
   Printf.printf "%d\n" (List.length els)
 

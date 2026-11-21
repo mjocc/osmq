@@ -19,7 +19,7 @@
  (name osmq)
  (synopsis "An eDSL for OpenStreetMap in OCaml.")
  (description "An eDSL for OpenStreetMap in OCaml, completed for my Part II project.")
- (depends ocaml xmlm ptime)
+ (depends ocaml xmlm ptime ppx_deriving ppx_expect)
  )
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
