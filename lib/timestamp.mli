@@ -23,4 +23,5 @@ val equal : t -> t -> bool
 val compare : t -> t -> int
 
 val pp : Format.formatter -> t -> unit
+[@@ocaml.toplevel_printer]
 (** Represents {!t} as an RFC3339 timestamp on the UTC timeline.*)

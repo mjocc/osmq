@@ -1,4 +1,5 @@
 (library
  (name osmq)
  (public_name osmq)
- (libraries xmlm ptime ppx_deriving))
+ (libraries xmlm ptime ppx_deriving)
+ (preprocess (pps ppx_deriving.show)))

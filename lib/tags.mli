@@ -21,4 +21,4 @@ val to_list : t -> (string * string) list
    iter type thign? *)
 
 val equal : t -> t -> bool
-val pp : Format.formatter -> t -> unit
+val pp : Format.formatter -> t -> unit [@@ocaml.toplevel_printer]
