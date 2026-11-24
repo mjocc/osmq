@@ -18,6 +18,6 @@ let hash = Hashtbl.hash
 let pp ppf x = Format.fprintf ppf "%d" x
 
 (* these are largely also here for ppx_deriving*)
-let pp_node_id = pp
-let pp_way_id = pp
-let pp_relation_id = pp
+let pp_node_id ppf x = Format.fprintf ppf "n%d" x
+let pp_way_id ppf x = Format.fprintf ppf "w%d" x
+let pp_relation_id ppf x = Format.fprintf ppf "r%d" x

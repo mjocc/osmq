@@ -34,6 +34,8 @@ val equal : 'k t -> 'k t -> bool
 val compare : 'k t -> 'k t -> int
 val hash : 'k t -> int
 val pp : Format.formatter -> 'k t -> unit [@@ocaml.toplevel_printer]
-val pp_node_id : Format.formatter -> 'k t -> unit [@@ocaml.toplevel_printer]
-val pp_way_id : Format.formatter -> 'k t -> unit [@@ocaml.toplevel_printer]
-val pp_relation_id : Format.formatter -> 'k t -> unit [@@ocaml.toplevel_printer]
+val pp_node_id : Format.formatter -> node_id -> unit [@@ocaml.toplevel_printer]
+val pp_way_id : Format.formatter -> way_id -> unit [@@ocaml.toplevel_printer]
+
+val pp_relation_id : Format.formatter -> relation_id -> unit
+[@@ocaml.toplevel_printer]
