@@ -27,7 +27,7 @@ let equal = String_map.equal String.equal
 let pp_pair ppf (x, y) = Format.fprintf ppf "%s=\"%s\"" x y
 
 let pp ppf x =
-  Format.fprintf ppf "tags[%a]"
+  Format.fprintf ppf "Tags.t [%a]"
     (Format.pp_print_list
        ~pp_sep:(fun ppf () -> Format.fprintf ppf " @ ")
        pp_pair)

@@ -1,4 +1,5 @@
 (executable
  (public_name osmq)
  (name main)
- (libraries osmq))
+ (libraries osmq)
+ (preprocess (pps ppx_deriving.show)))
